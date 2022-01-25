@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='bootstrap-5.0.2-dist/css/bootstrap.css' rel="stylesheet">
+    <title>Operadores</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center; margin-top: 150px;">Calculadora</h1>
+    <form action="calculos.php" method="post">
+        <select class="form-select" aria-label="Default select example" name="operacion" style="max-width: 40rem; margin-left: auto; margin-right: auto;">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicacion</option>
+            <option value="division">Division</option>
+        </select>
+        <br>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-2">
+              <input type="text" class="form-control" placeholder="primer valor" name="N1">
+            </div>
+            <div class="col-2">
+              <input type="text" class="form-control" placeholder="segundo valor" name="N2"> 
+            </div>
+          </div>
+        <br>
+        <br>
+        <div class="d-grid gap-2 col-2 mx-auto">
+            <input type="submit" class="btn btn-outline-primary" name="enviar">
+            <input type="reset"  class="btn btn-outline-danger" name="borrar">
+        </div>
+    </div>
+    
+        
+    </form>
+</body>
+</html>
